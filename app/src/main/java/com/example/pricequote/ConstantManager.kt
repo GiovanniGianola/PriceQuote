@@ -1,0 +1,20 @@
+package com.example.pricequote
+
+import java.util.ArrayList
+import java.util.HashMap
+
+@Suppress("unused")
+const val TAG = "PriceQuote"
+const val NEW_INVOICE_ID = 0
+
+const val INVOICES_LIST_KEY = "invoices_list_key"
+const val INVOICE_TEXT_KEY = "invoice_text_key"
+
+const val SPACE = 0
+const val CAT = 1
+const val SIZE = 2
+
+const val ALPH_ASC = 0
+const val ALPH_DESC = 1
+const val DATE_ASC = 2
+const val DATE_DESC = 3

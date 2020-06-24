@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.homequote.ui.MainActivity">
+    <item
+        android:id="@+id/action_load_sample"
+        android:title="@string/add_sample_invoices"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_delete_all"
+        android:title="@string/delete_all"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="@string/sort"
+        app:showAsAction="ifRoom">
+            <menu>
+                <item
+                    android:id="@+id/sort_alph_asc"
+                    android:title="@string/alphabetic_asc"/>
+                <item
+                    android:id="@+id/sort_alph_desc"
+                    android:title="@string/alphabetic_desc"/>
+                <item
+                    android:id="@+id/sort_date_asc"
+                    android:title="@string/date_asc"/>
+                <item
+                    android:id="@+id/sort_date_desc"
+                    android:title="@string/date_desc"/>
+            </menu>
+    </item>
+</menu>

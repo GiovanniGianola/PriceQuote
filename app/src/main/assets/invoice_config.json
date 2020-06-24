@@ -1,0 +1,611 @@
+[
+  {
+    "spaceName": "Residential",
+    "categoryList": [
+      {
+        "categoryName": "Apartment",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 100,
+            "multiplier": 1.0,
+            "basePrice": 400
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 101,
+            "maxSqm": 200,
+            "multiplier": 1.0,
+            "basePrice": 500
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 201,
+            "maxSqm": 400,
+            "multiplier": 1.2,
+            "basePrice": 600
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 401,
+            "maxSqm": null,
+            "multiplier": 1.6,
+            "basePrice": 700
+          }
+        ]
+      },
+      {
+        "categoryName": "House",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 150,
+            "multiplier": 1.0,
+            "basePrice": 550
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 151,
+            "maxSqm": 300,
+            "multiplier": 1.0,
+            "basePrice": 650
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 301,
+            "maxSqm": 500,
+            "multiplier": 1.2,
+            "basePrice": 750
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 501,
+            "maxSqm": null,
+            "multiplier": 1.6,
+            "basePrice": 1000
+          }
+        ]
+      },
+      {
+        "categoryName": "Loft",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 100,
+            "multiplier": 1.0,
+            "basePrice": 400
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 101,
+            "maxSqm": 200,
+            "multiplier": 1.0,
+            "basePrice": 500
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 201,
+            "maxSqm": 400,
+            "multiplier": 1.2,
+            "basePrice": 600
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 401,
+            "maxSqm": null,
+            "multiplier": 1.6,
+            "basePrice": 700
+          }
+        ]
+      },
+      {
+        "categoryName": "Single_room",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 30,
+            "multiplier": 0.6,
+            "basePrice": 200
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 31,
+            "maxSqm": 60,
+            "multiplier": 0.6,
+            "basePrice": 250
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 61,
+            "maxSqm": 120,
+            "multiplier": 0.8,
+            "basePrice": 350
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 121,
+            "maxSqm": null,
+            "multiplier": 1.0,
+            "basePrice": 450
+          }
+        ]
+      },
+      {
+        "categoryName": "Living_area",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 50,
+            "multiplier": 0.6,
+            "basePrice": 250
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 51,
+            "maxSqm": 100,
+            "multiplier": 0.6,
+            "basePrice": 350
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 101,
+            "maxSqm": 200,
+            "multiplier": 0.8,
+            "basePrice": 450
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 201,
+            "maxSqm": null,
+            "multiplier": 1.0,
+            "basePrice": 550
+          }
+        ]
+      },
+      {
+        "categoryName": "Other",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 500,
+            "multiplier": 1.2,
+            "basePrice": 800
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 501,
+            "maxSqm": 1000,
+            "multiplier": 1.4,
+            "basePrice": 1200
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 1001,
+            "maxSqm": 2000,
+            "multiplier": 1.6,
+            "basePrice": 1800
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 2001,
+            "maxSqm": null,
+            "multiplier": 2.0,
+            "basePrice": 2500
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "spaceName": "Commercial",
+    "categoryList": [
+      {
+        "categoryName": "Retail",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 100,
+            "multiplier": 1.0,
+            "basePrice": 400
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 101,
+            "maxSqm": 200,
+            "multiplier": 1.0,
+            "basePrice": 500
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 201,
+            "maxSqm": 400,
+            "multiplier": 1.2,
+            "basePrice": 600
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 401,
+            "maxSqm": null,
+            "multiplier": 1.6,
+            "basePrice": 700
+          }
+        ]
+      },
+      {
+        "categoryName": "Office",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 150,
+            "multiplier": 1.0,
+            "basePrice": 500
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 151,
+            "maxSqm": 300,
+            "multiplier": 1.0,
+            "basePrice": 600
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 301,
+            "maxSqm": 500,
+            "multiplier": 1.2,
+            "basePrice": 700
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 501,
+            "maxSqm": null,
+            "multiplier": 1.6,
+            "basePrice": 900
+          }
+        ]
+      },
+      {
+        "categoryName": "Co_working",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 200,
+            "multiplier": 1.2,
+            "basePrice": 600
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 201,
+            "maxSqm": 500,
+            "multiplier": 1.4,
+            "basePrice": 700
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 501,
+            "maxSqm": 1000,
+            "multiplier": 1.6,
+            "basePrice": 900
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 1001,
+            "maxSqm": null,
+            "multiplier": 2.0,
+            "basePrice": 1000
+          }
+        ]
+      },
+      {
+        "categoryName": "Bb",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 200,
+            "multiplier": 1.2,
+            "basePrice": 600
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 201,
+            "maxSqm": 500,
+            "multiplier": 1.4,
+            "basePrice": 700
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 501,
+            "maxSqm": 1000,
+            "multiplier": 1.6,
+            "basePrice": 900
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 1001,
+            "maxSqm": null,
+            "multiplier": 2.0,
+            "basePrice": 1000
+          }
+        ]
+      },
+      {
+        "categoryName": "Coffe_shop",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 50,
+            "multiplier": 1.0,
+            "basePrice": 400
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 51,
+            "maxSqm": 100,
+            "multiplier": 1.0,
+            "basePrice": 500
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 101,
+            "maxSqm": 200,
+            "multiplier": 1.2,
+            "basePrice": 600
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 201,
+            "maxSqm": null,
+            "multiplier": 1.6,
+            "basePrice": 700
+          }
+        ]
+      },
+      {
+        "categoryName": "Restaurant",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 150,
+            "multiplier": 1.0,
+            "basePrice": 500
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 151,
+            "maxSqm": 300,
+            "multiplier": 1.0,
+            "basePrice": 600
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 301,
+            "maxSqm": 500,
+            "multiplier": 1.2,
+            "basePrice": 700
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 501,
+            "maxSqm": null,
+            "multiplier": 1.6,
+            "basePrice": 900
+          }
+        ]
+      },
+      {
+        "categoryName": "Club",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 200,
+            "multiplier": 1.2,
+            "basePrice": 600
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 201,
+            "maxSqm": 500,
+            "multiplier": 1.4,
+            "basePrice": 700
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 501,
+            "maxSqm": 1000,
+            "multiplier": 1.6,
+            "basePrice": 900
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 1001,
+            "maxSqm": null,
+            "multiplier": 2.0,
+            "basePrice": 1000
+          }
+        ]
+      },
+      {
+        "categoryName": "Other",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 500,
+            "multiplier": 1.2,
+            "basePrice": 800
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 501,
+            "maxSqm": 1000,
+            "multiplier": 1.4,
+            "basePrice": 1200
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 1001,
+            "maxSqm": 2000,
+            "multiplier": 1.6,
+            "basePrice": 1800
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 2001,
+            "maxSqm": null,
+            "multiplier": 2.0,
+            "basePrice": 2500
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "spaceName": "Outdoors",
+    "categoryList": [
+      {
+        "categoryName": "Garden",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 200,
+            "multiplier": 1.0,
+            "basePrice": 200
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 201,
+            "maxSqm": 500,
+            "multiplier": 1.0,
+            "basePrice": 300
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 501,
+            "maxSqm": 1000,
+            "multiplier": 1.2,
+            "basePrice": 400
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 1001,
+            "maxSqm": null,
+            "multiplier": 1.6,
+            "basePrice": 500
+          }
+        ]
+      },
+      {
+        "categoryName": "Pool_area",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 200,
+            "multiplier": 1.0,
+            "basePrice": 200
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 201,
+            "maxSqm": 500,
+            "multiplier": 1.0,
+            "basePrice": 300
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 501,
+            "maxSqm": 1000,
+            "multiplier": 1.2,
+            "basePrice": 400
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 1001,
+            "maxSqm": null,
+            "multiplier": 1.6,
+            "basePrice": 500
+          }
+        ]
+      },
+      {
+        "categoryName": "Terrace",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 50,
+            "multiplier": 0.6,
+            "basePrice": 200
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 51,
+            "maxSqm": 100,
+            "multiplier": 0.6,
+            "basePrice": 300
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 101,
+            "maxSqm": 300,
+            "multiplier": 0.8,
+            "basePrice": 400
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 301,
+            "maxSqm": null,
+            "multiplier": 1.0,
+            "basePrice": 500
+          }
+        ]
+      },
+      {
+        "categoryName": "Other",
+        "sizeList": [
+          {
+            "sizeName": "Small",
+            "minSqm": 0,
+            "maxSqm": 500,
+            "multiplier": 1.2,
+            "basePrice": 800
+          },
+          {
+            "sizeName": "Medium",
+            "minSqm": 501,
+            "maxSqm": 1000,
+            "multiplier": 1.4,
+            "basePrice": 1200
+          },
+          {
+            "sizeName": "Large",
+            "minSqm": 1001,
+            "maxSqm": 2000,
+            "multiplier": 1.6,
+            "basePrice": 1800
+          },
+          {
+            "sizeName": "X_Large",
+            "minSqm": 2001,
+            "maxSqm": null,
+            "multiplier": 2.0,
+            "basePrice": 2500
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">PriceQuote</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">List Fragment</string>
+    <string name="second_fragment_label">Invoice Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello List fragment</string>
+    <string name="hello_second_fragment">Hello Invoice fragment</string>
+    <string name="add_invoice">Add_invoice</string>
+    <string name="new_invoice">New Invoice</string>
+    <string name="edit_invoice">Edit Invoice</string>
+    <string name="price">Price</string>
+    <string name="add_sample_invoices">Add sample invoices</string>
+    <string name="delete_all">Delete all</string>
+    <string name="delete">Delete</string>
+    <string name="default_text">Default Text</string>
+    <string name="space">Space</string>
+    <string name="category">Category</string>
+    <string name="size">Size</string>
+    <string name="title">Title</string>
+    <string name="optional">(optional)</string>
+    <string name="note">Note</string>
+    <string name="euro_symbol">€</string>
+
+    <string name="save">Save</string>
+    <string name="discard">Discard</string>
+    <string name="cancel">Cancel</string>
+    <string name="exit">Exit?</string>
+    <string name="customize_the_package">Customize the package</string>
+    <string name="sort">Sort</string>
+    <string name="alphabetic_asc">↑ Alphabetic</string>
+    <string name="alphabetic_desc">↓ Alphabetic</string>
+    <string name="date_asc">↑ Date</string>
+    <string name="date_desc">↓ Date</string>
+
+    <string name="tab_text_1">Info</string>
+    <string name="tab_text_2">Space</string>
+    <string name="tab_text_3">Category</string>
+    <string name="tab_text_4">Custom</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment CATEGORY</string>
+
+
+    <string name="space_title">What kind of space is needed to renovate?</string>
+    <string name="space_subtitle">Whether it\'s renovation, a new construction, or to simply furnish a room. Start by clicking one of the options below:</string>
+    <string name="category_title">Which category does the place belong to?</string>
+    <string name="category_subtitle">Pick one among the categories below.</string>
+    <string name="size_title">How big is the space?</string>
+    <string name="size_subtitle">Give an idea of how large the space is that have to be designed. This will help to set a balanced prize.</string>
+    <string name="custom_title">Customize the package</string>
+    <string name="custom_subtitle">Choose the resources you want to add to your package.</string>
+    <string name="total_cost">Total Cost:</string>
+</resources>

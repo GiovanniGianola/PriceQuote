@@ -1,0 +1,182 @@
+[
+  {
+    "categoryName": "INDOOR PLANS",
+    "isChecked": false,
+    "subCategoryList": [
+      {
+        "subCategoryName": "CEILING/FALSE-CEILING PLAN",
+        "subCategoryDesc": "A scale architectural drawing illustrating heights and ceiling composition, complete with contingent climbs and gaps, materials to be used and possible false-ceilings.",
+        "subCategoryBasePrice": 100,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "DEMOLITION AND RECONSTRUCTION PLAN",
+        "subCategoryDesc": "Floor Plan indicating suggestions for wall demolitions and/or reconstructions, highlighted with different colors or lines according to the specific requirements.",
+        "subCategoryBasePrice": 100,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "WIRING PLAN",
+        "subCategoryDesc": "Architectural drawing indicating in-plan arrangement of all wire-system components (ex: outlets, switches etc.), complete with IEC symbols for correct identification.",
+        "subCategoryBasePrice": 400,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "LIGHTING PLAN",
+        "subCategoryDesc": "Architectural layout detailing internal disposition of all light sources included in the Project (table/floor/wall lamps, switches etc.), complete with electricity flow indications, IEC and other pertinent symbols for correct identification.",
+        "subCategoryBasePrice": 100,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "WATER/SANITATION PLAN",
+        "subCategoryDesc": "Architectural drawing illustrating water charge and discharge, connection and distribution system within the building, complete with indications for bathroom fixtures and foreseen machinery/devices (boiler, drainage, electrical appliances etc.).",
+        "subCategoryBasePrice": 400,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "AIR-CONDITIONING PLAN",
+        "subCategoryDesc": "Architectural plan indicating composition of temperature, moisture and air-quality internal control systems for both summer and winter external conditions.",
+        "subCategoryBasePrice": 200,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "3D FLOORPLAN",
+        "subCategoryDesc": "A 3d graphic representation of the floorplan that can help better understand the interior spaces, the various finishes and the dimensions of the furnishings.",
+        "subCategoryBasePrice": 400,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "categoryName": "OUTDOOR PLANS",
+    "isChecked": false,
+    "subCategoryList": [
+      {
+        "subCategoryName": "PLAN AND ABACUS OF PLANT SPECIES",
+        "subCategoryDesc": "Architectural landscape drawing of open-air areas, with in-plan distribution and listing of the principal plants and tree species employed.",
+        "subCategoryBasePrice": 300,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "categoryName": "SECTIONS",
+    "isChecked": false,
+    "subCategoryList": [
+      {
+        "subCategoryName": "SECTION WITH TECHNICAL DIMENSIONS",
+        "subCategoryDesc": "Perspective drawing illustrating a cross-section of the building’s interior, complete with possible gaps, climbs and surface differences present, as well as all measurements.",
+        "subCategoryBasePrice": 100,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "CONSTRUCTION DETAIL SECTION",
+        "subCategoryDesc": "Perspective drawing illustrating a cross-section of the building, complete with details concerning structure composition and construction materials to be used.",
+        "subCategoryBasePrice": 200,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "AXONOMETRIC CROSS-SECTION",
+        "subCategoryDesc": "Perspective drawing consisting in a 90° cross-section of the building that illustrates all three of its dimensions.",
+        "subCategoryBasePrice": 200,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "categoryName": "PERSPECTIVES",
+    "isChecked": false,
+    "subCategoryList": [
+      {
+        "subCategoryName": "EXTERNAL PERSPECTIVE FROM 4 SIDES WITH DIMENSIONS",
+        "subCategoryDesc": "Orthogonal Projection of building’s vertical development, illustrating the architectural drawing of the four facades, with possible gaps, climbs, surface differences and any other significant architectural element present.",
+        "subCategoryBasePrice": 500,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "categoryName": "3D IMAGES",
+    "isChecked": false,
+    "subCategoryList": [
+      {
+        "subCategoryName": "RENDER VIEW",
+        "subCategoryDesc": "A 3D image, a hand-drawn and colored architectural drawing, or a collage depicting how the space and furniture distribution can be imagined and planned.",
+        "subCategoryBasePrice": 500,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "categoryName": "INTERIOR DESIGN",
+    "isChecked": false,
+    "subCategoryList": [
+      {
+        "subCategoryName": "FURNITURE LIST",
+        "subCategoryDesc": "A list of the principal pieces of furniture proposed, according to the budget that the customer may have indicated. The list should include price, brand, and website for purchase, and should be useful to understand the in-plan disposition of said furniture.",
+        "subCategoryBasePrice": 200,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "FINISHES LIST",
+        "subCategoryDesc": "A complete list of all elements which complete the raw structure of the building and make it ready for use (for ex: plasterwork, wall coverings and coatings, frames, fixtures etc.). The list should include price, brand, and website for purchase.",
+        "subCategoryBasePrice": 100,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "FLOORING MATERIALS LIST",
+        "subCategoryDesc": "A list of the materials used for the building’s flooring. The list should include price, brand, and website for purchase.",
+        "subCategoryBasePrice": 100,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "BATHROOM FIXTURES PRODUCT LIST",
+        "subCategoryDesc": "A list of the principal bathroom fixtures proposed, according to the budget that the customer may have indicated. The list should include price, brand, and website for purchase.",
+        "subCategoryBasePrice": 100,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "COLOR SCHEME",
+        "subCategoryDesc": "A scheme illustrating the palette of all colors, shades and hues used in the Project.",
+        "subCategoryBasePrice": 100,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "DOORS, WINDOWS AND HANDLES LISTS",
+        "subCategoryDesc": "A list of the principal fittings used, specifically concerning window and door frames and proposed handles and doorknobs, according to the budget that the customer may have indicated. The list should include price, brand, and website for purchase.",
+        "subCategoryBasePrice": 100,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "LIGHTS SCHEME",
+        "subCategoryDesc": "A list of the principal lamps and lighting sources proposed, according to the budget that the customer may have indicated. The list should include price, brand, and website for purchase.",
+        "subCategoryBasePrice": 100,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "CUSTOMIZED INTERIOR DESIGN PIECE",
+        "subCategoryDesc": "Personalized architectural design of a single furniture piece, tailor-made for the customer, with detailed indications of measurements and materials proposed for its realization.",
+        "subCategoryBasePrice": 400,
+        "isChecked": false
+      }
+    ]
+  },
+  {
+    "categoryName": "OTHER",
+    "isChecked": false,
+    "subCategoryList": [
+      {
+        "subCategoryName": "COST ESTIMATE",
+        "subCategoryDesc": "A rough estimate of total costs related to the Project realization, including expenses related to materials, labor, as well as costs related to furnishings and finishes and any other significant cost.",
+        "subCategoryBasePrice": 400,
+        "isChecked": false
+      },
+      {
+        "subCategoryName": "VIRTUAL TOUR",
+        "subCategoryDesc": "A photorealistic virtual tour. It enables the user to freely move about in the Project’s space and to have a 360° view of the space which the user is browsing in at the moment. The user can move from one room to another by using cursor movement keys.",
+        "subCategoryBasePrice": 1000,
+        "isChecked": false
+      }
+    ]
+  }
+]

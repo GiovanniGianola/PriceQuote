@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListFragment">
+
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="com.example.pricequote.ui.list.ListFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_list">
+        <action
+            android:id="@+id/action_ListFragment_to_invoiceActivity"
+            app:destination="@id/invoiceActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/invoiceActivity"
+        android:name="com.example.pricequote.ui.invoice.InvoiceActivity"
+        android:label="activity_invoice"
+        tools:layout="@layout/activity_invoice" >
+        <argument
+            android:name="invoiceId"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </activity>
+    <fragment
+        android:id="@+id/infoFragment"
+        android:name="com.example.pricequote.ui.invoice.fragment.InfoFragment"
+        android:label="fragment_info"
+        tools:layout="@layout/fragment_info" />
+</navigation>
