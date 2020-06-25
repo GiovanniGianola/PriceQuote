@@ -25,4 +25,7 @@ The application is entirely written in **Kotlin 1.3.72** with **Android Studio 4
 * [Moshi](https://github.com/square/moshi) - JSON library for Android to read and interpret configuration files located in the Asset folder.
 
 ## Authors
+
 * [Giovanni Gianola]
+
+[Giovanni Gianola]: <https://github.com/GiovanniGianola>
