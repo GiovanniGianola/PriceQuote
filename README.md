@@ -8,6 +8,13 @@ The application allows you to create and save locally restoration / revaluation 
 
 ## Screenshot
 
+Here are some screenshots of the application:
+
+![Homepage](https://github.com/GiovanniGianola/PriceQuote/blob/master/screenshot/HomePage.jpg)
+![InfoFragment](https://github.com/GiovanniGianola/PriceQuote/blob/master/screenshot/InfoFrag.jpg)
+![CategoryFragment](https://github.com/GiovanniGianola/PriceQuote/blob/master/screenshot/CategoryFrag.jpg)
+![CustomOptionsFragment](https://github.com/GiovanniGianola/PriceQuote/blob/master/screenshot/CustomOptionsFrag.jpg?raw=true)
+
 ## Built with
 The application is entirely written in **Kotlin 1.3.72** with **Android Studio 4.0**, developed following the guidelines imposed by the architectural model software **Model-View-ViewModel** ([MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)). main libraries used:
 * [Room](https://developer.android.com/jetpack/androidx/releases/room) - the quotes made through the applications are saved in a local database.
