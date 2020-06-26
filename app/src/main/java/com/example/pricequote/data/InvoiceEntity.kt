@@ -4,7 +4,7 @@ import android.os.Parcelable
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.homequote.data.InvoiceDetail.*
-import com.example.pricequote.NEW_INVOICE_ID
+import com.example.pricequote.utilities.NEW_INVOICE_ID
 import kotlinx.android.parcel.Parcelize
 import java.util.*
 

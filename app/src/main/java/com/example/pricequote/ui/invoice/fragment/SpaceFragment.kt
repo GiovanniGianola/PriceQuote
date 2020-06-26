@@ -12,7 +12,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.homequote.data.InvoiceDetail
 import com.example.pricequote.R
-import com.example.pricequote.TAG
+import com.example.pricequote.utilities.TAG
 import com.example.pricequote.data.InvoiceEntity
 import com.example.pricequote.databinding.FragmentSpaceBinding
 import com.example.pricequote.ui.invoice.InvoiceActivity

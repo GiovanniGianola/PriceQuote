@@ -13,7 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pricequote.*
 import com.example.pricequote.data.InvoiceEntity
 import com.example.pricequote.databinding.FragmentListBinding
-import com.example.pricequote.utilities.PrefsHelper
+import com.example.pricequote.ui.invoice.InvoiceActivity
+import com.example.pricequote.utilities.*
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -72,7 +73,9 @@ class ListFragment : Fragment(), InvoiceListAdapter.ListItemListener  {
             binding.recyclerView.adapter = adapter
             adapter.setItemListener(this@ListFragment)
             // restore selected invoices state if necessary
-            val selectedInvoices = savedInstanceState?.getParcelableArrayList<InvoiceEntity>(INVOICES_LIST_KEY)
+            val selectedInvoices = savedInstanceState?.getParcelableArrayList<InvoiceEntity>(
+                INVOICES_LIST_KEY
+            )
             adapter.selectedInvoices.addAll(selectedInvoices ?: emptyList())
             val sort = PrefsHelper.getSortType(requireContext())
             adapter.orderItems(sort)
@@ -139,28 +142,40 @@ class ListFragment : Fragment(), InvoiceListAdapter.ListItemListener  {
                 clearSelectedInvoices()
                 true
             }
+            R.id.log_out -> {
+                (activity as ListActivity).signOut()
+                true
+            }
             R.id.action_delete -> {
                 viewModel.deleteSelectedInvoices(adapter.selectedInvoices)
                 clearSelectedInvoices()
                 true
             }
             R.id.sort_alph_asc -> {
-                PrefsHelper.setSortType(requireContext(), ALPH_ASC)
+                PrefsHelper.setSortType(requireContext(),
+                    ALPH_ASC
+                )
                 adapter.orderItems(ALPH_ASC)
                 true
             }
             R.id.sort_alph_desc -> {
-                PrefsHelper.setSortType(requireContext(), ALPH_DESC)
+                PrefsHelper.setSortType(requireContext(),
+                    ALPH_DESC
+                )
                 adapter.orderItems(ALPH_DESC)
                 true
             }
             R.id.sort_date_asc -> {
-                PrefsHelper.setSortType(requireContext(), DATE_ASC)
+                PrefsHelper.setSortType(requireContext(),
+                    DATE_ASC
+                )
                 adapter.orderItems(DATE_ASC)
                 true
             }
             R.id.sort_date_desc -> {
-                PrefsHelper.setSortType(requireContext(), DATE_DESC)
+                PrefsHelper.setSortType(requireContext(),
+                    DATE_DESC
+                )
                 adapter.orderItems(DATE_DESC)
                 true
             }

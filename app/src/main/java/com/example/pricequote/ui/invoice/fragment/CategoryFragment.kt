@@ -12,10 +12,10 @@ import android.widget.LinearLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.example.homequote.data.InvoiceDetail
-import com.example.pricequote.CAT
+import com.example.pricequote.utilities.CAT
 import com.example.pricequote.R
-import com.example.pricequote.SIZE
-import com.example.pricequote.TAG
+import com.example.pricequote.utilities.SIZE
+import com.example.pricequote.utilities.TAG
 import com.example.pricequote.data.InvoiceEntity
 import com.example.pricequote.databinding.FragmentCategoryBinding
 import com.example.pricequote.ui.invoice.InvoiceActivity
@@ -83,7 +83,9 @@ class CategoryFragment : Fragment(), SectionsPagerAdapter.EventListener {
                         }
                     }
                 }
-                setFocusButtonsGroup(catBtnUnfocused, catBtnFocus, CAT)
+                setFocusButtonsGroup(catBtnUnfocused, catBtnFocus,
+                    CAT
+                )
                 drawSizesButtons()
 
                 if (currentInvoice.size == null) {
@@ -102,7 +104,9 @@ class CategoryFragment : Fragment(), SectionsPagerAdapter.EventListener {
                         }
                     }
                 }
-                setFocusButtonsGroup(sizeBtnUnfocused, sizeBtnFocus, SIZE)
+                setFocusButtonsGroup(sizeBtnUnfocused, sizeBtnFocus,
+                    SIZE
+                )
                 saveLocalFragmentUpdates()
             })
         }
@@ -155,10 +159,14 @@ class CategoryFragment : Fragment(), SectionsPagerAdapter.EventListener {
             currentCategoryIdx = view.id
             //currentSizeIdx = 0
 
-            setFocusButtonsGroup(catBtnUnfocused, catBtn[view.id], CAT)
+            setFocusButtonsGroup(catBtnUnfocused, catBtn[view.id],
+                CAT
+            )
 
             drawSizesButtons()
-            setFocusButtonsGroup(sizeBtnUnfocused, sizeBtn[currentSizeIdx], SIZE)
+            setFocusButtonsGroup(sizeBtnUnfocused, sizeBtn[currentSizeIdx],
+                SIZE
+            )
         }
     }
 
@@ -210,7 +218,9 @@ class CategoryFragment : Fragment(), SectionsPagerAdapter.EventListener {
     private val clickListenerSizes = View.OnClickListener { view ->
         if (sizeBtn[view.id] != sizeBtnUnfocused) {
             currentSizeIdx = view.id
-            setFocusButtonsGroup(sizeBtnUnfocused, sizeBtn[currentSizeIdx], SIZE)
+            setFocusButtonsGroup(sizeBtnUnfocused, sizeBtn[currentSizeIdx],
+                SIZE
+            )
         }
     }
 

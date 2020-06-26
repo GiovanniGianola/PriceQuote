@@ -24,9 +24,4 @@
             app:argType="integer"
             android:defaultValue="0" />
     </activity>
-    <fragment
-        android:id="@+id/infoFragment"
-        android:name="com.example.pricequote.ui.invoice.fragment.InfoFragment"
-        android:label="fragment_info"
-        tools:layout="@layout/fragment_info" />
 </navigation>

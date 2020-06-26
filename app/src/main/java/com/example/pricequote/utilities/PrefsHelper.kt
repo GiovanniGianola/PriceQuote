@@ -2,7 +2,6 @@ package com.example.pricequote.utilities
 
 import android.content.Context
 import android.content.SharedPreferences
-import com.example.pricequote.DATE_ASC
 
 const val ITEM_SORT_KEY = "item_sort_key"
 
@@ -18,6 +17,8 @@ class PrefsHelper {
         }
 
         fun getSortType(context: Context): Int =
-            preferences(context).getInt(ITEM_SORT_KEY, DATE_ASC)
+            preferences(context).getInt(ITEM_SORT_KEY,
+                DATE_ASC
+            )
     }
 }

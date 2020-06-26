@@ -5,13 +5,11 @@ import android.os.Bundle
 import android.util.Log
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.navArgs
 import androidx.navigation.navArgs
 import androidx.viewpager.widget.ViewPager
 import androidx.viewpager.widget.ViewPager.OnPageChangeListener
-import com.example.pricequote.NEW_INVOICE_ID
+import com.example.pricequote.utilities.NEW_INVOICE_ID
 import com.example.pricequote.R
 import com.google.android.material.tabs.TabLayout
 import kotlinx.android.synthetic.main.activity_invoice.*
@@ -97,8 +95,8 @@ class InvoiceActivity : AppCompatActivity() {
     }
 
     private fun saveAndReturn(): Boolean {
-        Log.i(com.example.pricequote.TAG,"UpdateDBData: InvoiceActivity")
-        Log.i(com.example.pricequote.TAG,"New Invoice: ${viewModel.currentInvoice.value}")
+        Log.i(com.example.pricequote.utilities.TAG,"UpdateDBData: InvoiceActivity")
+        Log.i(com.example.pricequote.utilities.TAG,"New Invoice: ${viewModel.currentInvoice.value}")
         viewModel.currentInvoice.value?.let { viewModel.updateInvoice(it) }
 
         finish()
@@ -117,7 +115,7 @@ class InvoiceActivity : AppCompatActivity() {
         }
         viewModel.currentInvoice.value?.finalPrice = finalPrice
         //finalPrice = finalPrice?.plus(price)
-        Log.i(com.example.pricequote.TAG,"Update Final Price: ${finalPrice?.toInt()}")
+        Log.i(com.example.pricequote.utilities.TAG,"Update Final Price: ${finalPrice?.toInt()}")
         priceInvoice.text = "${finalPrice?.toInt()}"
     }
 }

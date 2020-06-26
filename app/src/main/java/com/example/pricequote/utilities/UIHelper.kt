@@ -1,11 +1,9 @@
 package com.example.pricequote.utilities
 
-import android.util.Log
 import android.view.ViewGroup
 import android.widget.Button
 import androidx.fragment.app.FragmentActivity
 import com.example.pricequote.R
-import com.example.pricequote.TAG
 
 class UIHelper {
     companion object {

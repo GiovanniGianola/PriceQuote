@@ -10,7 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.pricequote.TAG
+import com.example.pricequote.utilities.TAG
 import com.example.pricequote.data.InvoiceEntity
 import com.example.pricequote.databinding.FragmentInfoBinding
 import com.example.pricequote.ui.invoice.InvoiceActivity

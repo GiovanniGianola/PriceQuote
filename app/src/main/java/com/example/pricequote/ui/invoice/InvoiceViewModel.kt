@@ -4,17 +4,17 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.example.pricequote.NEW_INVOICE_ID
+import com.example.pricequote.utilities.NEW_INVOICE_ID
 import com.example.pricequote.data.AppDatabase
 import com.example.pricequote.data.InvoiceEntity
-import com.example.pricequote.data.InvoiceRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class InvoiceViewModel(app: Application) : AndroidViewModel(app){
 
-    private val dataRepo = InvoiceRepository(app)
+    private val dataRepo =
+        InvoiceRepository(app)
     val invoiceDetailData = dataRepo.invoiceDetailData
     val invoiceCustomOptionData = dataRepo.invoiceCustomOptionData
 

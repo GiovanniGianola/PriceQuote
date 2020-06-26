@@ -1,7 +1,4 @@
-package com.example.pricequote
-
-import java.util.ArrayList
-import java.util.HashMap
+package com.example.pricequote.utilities
 
 @Suppress("unused")
 const val TAG = "PriceQuote"
@@ -18,3 +15,7 @@ const val ALPH_ASC = 0
 const val ALPH_DESC = 1
 const val DATE_ASC = 2
 const val DATE_DESC = 3
+
+const val RC_SIGN_IN = 123
+const val USER = "user"
+const val USERS = "users"
