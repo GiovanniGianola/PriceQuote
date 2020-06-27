@@ -6,6 +6,10 @@ The application allows you to create and save locally restoration / revaluation 
 * the main screen shows the list of quotes already made in a **RecycleView**, by selecting an item from the list it is possible to edit the selected object. Finally a **FloatingButton** positioned in the bottom right part of the screen allows you to create a new quote.
 * the second screen allows you to fill in the quote. it is made up of 4 tabs in **TabbedViewPager** that guide you to fill in the quote.
 
+## Latest Updates
+
+to allow the persistent storing of data, I introduced the saving of invoices on ![Firestore](https://firebase.google.com/docs/firestore). This is possible via ![Google Authentication](https://firebase.google.com/docs/auth) required the first time the app is started. login requires only email and name. in this way, quotes can be accessed from multiple devices.
+
 ## Screenshot
 
 Here are some screenshots of the application:
@@ -23,6 +27,7 @@ The application is entirely written in **Kotlin 1.3.72** with **Android Studio 4
 * [Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle) - perform actions in response to a change in the lifecycle status of another component, such as activities and fragments.
 * [Coroutines](https://kotlinlang.org/docs/reference/coroutines-overview.html) - Asynchronous or non-blocking programming for database access exploiting Repository design pattern.
 * [Moshi](https://github.com/square/moshi) - JSON library for Android to read and interpret configuration files located in the Asset folder.
+* [Firebase](https://firebase.google.com/docs) - Google libraries for authentication and remote database services.
 
 ## Authors
 
