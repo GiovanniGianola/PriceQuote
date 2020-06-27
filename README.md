@@ -17,7 +17,7 @@ Here are some screenshots of the application:
 
 ## Built with
 The application is entirely written in **Kotlin 1.3.72** with **Android Studio 4.0**, developed following the guidelines imposed by the architectural model software **Model-View-ViewModel** ([MVVM](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel)). main libraries used:
-* [Room](https://developer.android.com/jetpack/androidx/releases/room) - the quotes made through the applications are saved in a local database.
+* [Room](https://developer.android.com/jetpack/androidx/releases/room) - the quotes made through the applications can be saved in a local database.
 * [Navigation](https://developer.android.com/jetpack/androidx/releases/navigation) - a framework for navigating between 'destinations' within an Android application implemented as Fragments or Activities.
 * [Recycle View](https://developer.android.com/jetpack/androidx/releases/recyclerview) - Android widget to efficiently show items in list format.
 * [Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle) - perform actions in response to a change in the lifecycle status of another component, such as activities and fragments.
