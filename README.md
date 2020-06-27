@@ -8,7 +8,7 @@ The application allows you to create and save locally restoration / revaluation 
 
 ## Latest Updates
 
-to allow the persistent storing of data, I introduced the saving of invoices on ![Firestore](https://firebase.google.com/docs/firestore). This is possible via ![Google Authentication](https://firebase.google.com/docs/auth) required the first time the app is started. login requires only email and name. in this way, quotes can be accessed from multiple devices.
+to allow the persistent storing of data, I introduced the saving of invoices on [Firestore](https://firebase.google.com/docs/firestore). This is possible via [Google Authentication](https://firebase.google.com/docs/auth) required the first time the app is started. login requires only email and name. in this way, quotes can be accessed from multiple devices.
 
 ## Screenshot
 
