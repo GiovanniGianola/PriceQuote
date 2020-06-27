@@ -7,11 +7,11 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.findNavController
 import com.example.pricequote.utilities.USER
 import com.example.pricequote.ui.auth.User
-import com.example.pricequote.ui.list.ListActivity
+import com.example.pricequote.ui.MainActivity
 import com.example.pricequote.ui.auth.AuthActivity
+import com.example.pricequote.utilities.LOCAL_STORAGE
 
 
 class SplashActivity : AppCompatActivity() {
@@ -20,10 +20,10 @@ class SplashActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-
         initSplashViewModel()
         checkIfUserIsAuthenticated()
+
+        Log.i(com.example.pricequote.utilities.TAG, "LOCAL DATABASE: $LOCAL_STORAGE")
     }
 
     private fun initSplashViewModel() {
@@ -58,7 +58,7 @@ class SplashActivity : AppCompatActivity() {
     }
 
     private fun goToMainActivity(user: User) {
-        val intent = Intent(this@SplashActivity, ListActivity::class.java)
+        val intent = Intent(this@SplashActivity, MainActivity::class.java)
         intent.putExtra(USER, user)
         startActivity(intent)
     }

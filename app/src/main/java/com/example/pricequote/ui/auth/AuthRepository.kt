@@ -42,7 +42,7 @@ class AuthRepository {
         return authenticatedUserMutableLiveData
     }
 
-    fun createUserInFirebaseIfNotExists(authenticatedUser: User): MutableLiveData<User> {
+    fun createUserInFirestoreIfNotExists(authenticatedUser: User): MutableLiveData<User> {
         val newUserMutableLiveData: MutableLiveData<User> = MutableLiveData()
         val uidRef = usersRef.document(authenticatedUser.uid!!)
 

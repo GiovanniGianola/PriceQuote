@@ -1,4 +1,4 @@
-package com.example.pricequote.ui.invoice
+package com.example.pricequote.data
 
 import android.app.Application
 import androidx.lifecycle.MutableLiveData

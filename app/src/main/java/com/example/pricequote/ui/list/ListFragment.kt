@@ -2,6 +2,7 @@ package com.example.pricequote.ui.list
 
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import android.view.*
 import androidx.fragment.app.Fragment
 import androidx.appcompat.app.AppCompatActivity
@@ -13,7 +14,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.pricequote.*
 import com.example.pricequote.data.InvoiceEntity
 import com.example.pricequote.databinding.FragmentListBinding
-import com.example.pricequote.ui.invoice.InvoiceActivity
+import com.example.pricequote.ui.MainActivity
 import com.example.pricequote.utilities.*
 
 /**
@@ -68,7 +69,8 @@ class ListFragment : Fragment(), InvoiceListAdapter.ListItemListener  {
         } // end also{}
 
         // Observe and display invoices list from the view model
-        viewModel.invoicesList?.observe(viewLifecycleOwner, Observer { invoicesList ->
+        // viewModel.invoicesList?.observe(viewLifecycleOwner, Observer { invoicesList ->
+        viewModel.getAllInvoices()?.observe(viewLifecycleOwner, Observer { invoicesList ->
             adapter = InvoiceListAdapter(invoicesList)
             binding.recyclerView.adapter = adapter
             adapter.setItemListener(this@ListFragment)
@@ -79,7 +81,6 @@ class ListFragment : Fragment(), InvoiceListAdapter.ListItemListener  {
             adapter.selectedInvoices.addAll(selectedInvoices ?: emptyList())
             val sort = PrefsHelper.getSortType(requireContext())
             adapter.orderItems(sort)
-
         }) // end observe()
 
         // Inflate the layout for this fragment
@@ -143,7 +144,7 @@ class ListFragment : Fragment(), InvoiceListAdapter.ListItemListener  {
                 true
             }
             R.id.log_out -> {
-                (activity as ListActivity).signOut()
+                (activity as MainActivity).signOut()
                 true
             }
             R.id.action_delete -> {

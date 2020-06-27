@@ -15,8 +15,7 @@ class SplashRepository {
 
     private val NTAG = "$TAG - SplashRepo"
     private val firebaseAuth = FirebaseAuth.getInstance()
-    private val user: User =
-        User()
+    private val user: User = User()
     private val rootRef = FirebaseFirestore.getInstance()
     private val usersRef = rootRef.collection(USERS)
 

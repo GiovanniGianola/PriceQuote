@@ -16,6 +16,6 @@ class AuthViewModel(app: Application) : AndroidViewModel(app) {
     }
 
     fun createUser(authenticatedUser: User?) {
-        createdUserLiveData = authRepository.createUserInFirebaseIfNotExists(authenticatedUser!!)
+        createdUserLiveData = authRepository.createUserInFirestoreIfNotExists(authenticatedUser!!)
     }
 }

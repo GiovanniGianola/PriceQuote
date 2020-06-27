@@ -1,7 +1,8 @@
-package com.example.pricequote.ui.list
+package com.example.pricequote.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pricequote.R
 import com.example.pricequote.ui.auth.AuthActivity
@@ -13,14 +14,14 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.auth.User
 
 
-class ListActivity : AppCompatActivity(), FirebaseAuth.AuthStateListener {
+class MainActivity : AppCompatActivity(), FirebaseAuth.AuthStateListener {
 
     private val firebaseAuth = FirebaseAuth.getInstance()
     private lateinit var googleSignInClient: GoogleSignInClient
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_list)
+        setContentView(R.layout.activity_main)
         setSupportActionBar(findViewById(R.id.toolbar))
 
         val user = getUserFromIntent()
@@ -40,11 +41,12 @@ class ListActivity : AppCompatActivity(), FirebaseAuth.AuthStateListener {
         val firebaseUser = firebaseAuth.currentUser
         if (firebaseUser == null) {
             goToAuthInActivity()
+            finish()
         }
     }
 
     private fun goToAuthInActivity() {
-        val intent = Intent(this@ListActivity, AuthActivity::class.java)
+        val intent = Intent(this@MainActivity, AuthActivity::class.java)
         startActivity(intent)
     }
 

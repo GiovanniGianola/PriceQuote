@@ -16,6 +16,10 @@ const val ALPH_DESC = 1
 const val DATE_ASC = 2
 const val DATE_DESC = 3
 
+// Firestore Constants
 const val RC_SIGN_IN = 123
 const val USER = "user"
 const val USERS = "users"
+const val INVOICE_LIST_FIELD = "invoices_list"
+
+const val LOCAL_STORAGE = false

@@ -10,7 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.pricequote.R
 import com.example.pricequote.utilities.RC_SIGN_IN
 import com.example.pricequote.utilities.USER
-import com.example.pricequote.ui.list.ListActivity
+import com.example.pricequote.ui.MainActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -113,7 +113,7 @@ class AuthActivity : AppCompatActivity() {
     }
 
     private fun goToMainActivity(user: User) {
-        val intent = Intent(this@AuthActivity, ListActivity::class.java)
+        val intent = Intent(this@AuthActivity, MainActivity::class.java)
         intent.putExtra(USER, user)
         startActivity(intent)
         finish()
