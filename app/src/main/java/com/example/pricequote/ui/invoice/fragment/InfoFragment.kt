@@ -18,7 +18,7 @@ import com.example.pricequote.ui.invoice.InvoiceViewModel
 import com.example.pricequote.ui.invoice.SectionsPagerAdapter
 
 
-class InfoFragment : Fragment(), SectionsPagerAdapter.EventListener {
+class InfoFragment : Fragment(), SectionsPagerAdapter.EventListener, UpdateableFragmentListener  {
 
     private lateinit var binding: FragmentInfoBinding
     private lateinit var viewModel: InvoiceViewModel
@@ -70,6 +70,9 @@ class InfoFragment : Fragment(), SectionsPagerAdapter.EventListener {
         Log.i(TAG,"saveLocalFragmentUpdates: InfoFragment")
         currentInvoice.title = binding.editTextInvoiceTitle.text.toString()
         currentInvoice.note = binding.editTextInvoiceNote.text.toString()
+    }
+
+    override fun updateUI() {
     }
 
     companion object {

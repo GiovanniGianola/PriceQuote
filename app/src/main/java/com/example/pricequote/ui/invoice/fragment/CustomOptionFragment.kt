@@ -20,7 +20,7 @@ import com.example.pricequote.utilities.ExpandableListViewHelper
 import kotlinx.android.synthetic.main.fragment_custom_option.*
 
 
-class CustomOptionFragment : Fragment(), SectionsPagerAdapter.EventListener, ExpandableListAdapter.EventListener {
+class CustomOptionFragment : Fragment(), SectionsPagerAdapter.EventListener, ExpandableListAdapter.EventListener, UpdateableFragmentListener {
 
     private lateinit var binding: FragmentCustomOptionBinding
     private lateinit var viewModel: InvoiceViewModel
@@ -59,7 +59,6 @@ class CustomOptionFragment : Fragment(), SectionsPagerAdapter.EventListener, Exp
                 currentInvoice = invoice
 
                 currentInvoice.size?.multiplier?.let { it1 -> adapter.updatePriceMultiplier(it1) }
-                Log.i(TAG,"multi: ${currentInvoice.size?.multiplier}")
                 if(currentInvoice.customOptionsList.isNullOrEmpty()) currentInvoice.customOptionsList = currentCustomOptionConfig
                 adapter.updateData(currentInvoice.customOptionsList!!)
             })
@@ -75,6 +74,9 @@ class CustomOptionFragment : Fragment(), SectionsPagerAdapter.EventListener, Exp
 
     override fun saveLocalFragmentUpdates() {
         currentInvoice.customOptionsList = adapter.getData()
+    }
+
+    override fun updateUI() {
     }
 
     override fun onEvent() {

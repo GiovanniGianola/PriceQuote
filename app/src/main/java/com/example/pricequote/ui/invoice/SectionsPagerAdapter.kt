@@ -4,12 +4,9 @@ import android.content.Context
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import androidx.viewpager.widget.PagerAdapter
 import com.example.pricequote.R
-import com.example.pricequote.ui.invoice.fragment.CategoryFragment
-import com.example.pricequote.ui.invoice.fragment.CustomOptionFragment
-import com.example.pricequote.ui.invoice.fragment.InfoFragment
-import com.example.pricequote.ui.invoice.fragment.SpaceFragment
+import com.example.pricequote.ui.invoice.fragment.*
+
 
 private val TAB_TITLES = arrayOf(
     R.string.tab_text_1,
@@ -33,8 +30,12 @@ class SectionsPagerAdapter(private val context: Context, fm: FragmentManager): F
         }
     }
 
-    override fun getItemPosition(`object`: Any): Int {
-        return PagerAdapter.POSITION_NONE
+    override fun getItemPosition(obj: Any): Int {
+        if (obj is UpdateableFragmentListener) {
+            //sent to all Fragment
+            obj.updateUI()
+        }
+        return super.getItemPosition(obj)
     }
 
     override fun getCount(): Int {

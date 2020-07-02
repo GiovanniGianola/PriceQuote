@@ -15,7 +15,6 @@ import com.example.homequote.data.InvoiceDetail
 import com.example.pricequote.utilities.CAT
 import com.example.pricequote.R
 import com.example.pricequote.utilities.SIZE
-import com.example.pricequote.utilities.TAG
 import com.example.pricequote.data.InvoiceEntity
 import com.example.pricequote.databinding.FragmentCategoryBinding
 import com.example.pricequote.ui.invoice.InvoiceActivity
@@ -25,8 +24,10 @@ import com.example.pricequote.utilities.UIHelper
 import kotlinx.android.synthetic.main.fragment_category.*
 
 
-class CategoryFragment : Fragment(), SectionsPagerAdapter.EventListener {
 
+class CategoryFragment : Fragment(), SectionsPagerAdapter.EventListener, UpdateableFragmentListener  {
+
+    private val TAG = "CategoryFragment"
     private lateinit var binding: FragmentCategoryBinding
     private lateinit var viewModel: InvoiceViewModel
     private lateinit var jsonConfig: List<InvoiceDetail.Space>
@@ -60,59 +61,58 @@ class CategoryFragment : Fragment(), SectionsPagerAdapter.EventListener {
             // Set up view model observer
             viewModel.currentInvoice.observe(viewLifecycleOwner, Observer { invoice ->
                 currentInvoice = invoice
-
-                for((count, space) in jsonConfig.withIndex()){
-                    if(space.spaceName.equals(currentInvoice.spaceName, ignoreCase = true)){
-                        currentSpaceIdx = count
-                        break
-                    }
-                }
-                drawCategoriesButtons()
-
-                catBtnFocus = catBtn[0]
-                currentCategoryIdx = 0
-                if (currentInvoice.categoryName == "") {
-                    catBtnFocus = catBtn[0]
-                    currentCategoryIdx = 0
-                } else {
-                    for ((count, btn) in catBtn.withIndex()) {
-                        if (btn.text.toString().equals(currentInvoice.categoryName!!, true)) {
-                            currentCategoryIdx = count
-                            catBtnFocus = btn
-                            break
-                        }
-                    }
-                }
-                setFocusButtonsGroup(catBtnUnfocused, catBtnFocus,
-                    CAT
-                )
-                drawSizesButtons()
-
-                if (currentInvoice.size == null) {
-                    sizeBtnFocus = sizeBtn[0]
-                    currentSizeIdx = 0
-                } else {
-                    for ((count, btn) in sizeBtn.withIndex()) {
-                        if (btn.text.toString().contains(
-                                currentInvoice.size!!.sizeName.toString(),
-                                ignoreCase = true
-                            )
-                        ) {
-                            currentSizeIdx = count
-                            sizeBtnFocus = btn
-                            break
-                        }
-                    }
-                }
-                setFocusButtonsGroup(sizeBtnUnfocused, sizeBtnFocus,
-                    SIZE
-                )
-                saveLocalFragmentUpdates()
+                updateUI()
             })
         }
 
         // Inflate the layout for this fragment
         return binding.root
+    }
+
+    override fun updateUI(){
+        for((count, space) in jsonConfig.withIndex()){
+            if(space.spaceName.equals(currentInvoice.spaceName, ignoreCase = true)){
+                currentSpaceIdx = count
+                break
+            }
+        }
+        drawCategoriesButtons()
+
+        catBtnFocus = catBtn[0]
+        currentCategoryIdx = 0
+        if (currentInvoice.categoryName == "") {
+            catBtnFocus = catBtn[0]
+            currentCategoryIdx = 0
+        } else {
+            for ((count, btn) in catBtn.withIndex()) {
+                if (btn.text.toString().equals(currentInvoice.categoryName!!, true)) {
+                    currentCategoryIdx = count
+                    catBtnFocus = btn
+                    break
+                }
+            }
+        }
+        setFocusButtonsGroup(catBtnUnfocused, catBtnFocus, CAT)
+        drawSizesButtons()
+
+        if (currentInvoice.size == null) {
+            sizeBtnFocus = sizeBtn[0]
+            currentSizeIdx = 0
+        } else {
+            for ((count, btn) in sizeBtn.withIndex()) {
+                if (btn.text.toString().contains(
+                        currentInvoice.size!!.sizeName.toString(),
+                        ignoreCase = true
+                    )
+                ) {
+                    currentSizeIdx = count
+                    sizeBtnFocus = btn
+                    break
+                }
+            }
+        }
+        setFocusButtonsGroup(sizeBtnUnfocused, sizeBtnFocus, SIZE)
+        saveLocalFragmentUpdates()
     }
 
     private fun drawCategoriesButtons() {
@@ -126,7 +126,7 @@ class CategoryFragment : Fragment(), SectionsPagerAdapter.EventListener {
         params.gravity = Gravity.CENTER
 
         val paramsBtn = LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.MATCH_PARENT, 1.0F)
-        paramsBtn.setMargins(10, 0, 10, 0)
+        paramsBtn.setMargins(10, 5, 10, 5)
         paramsBtn.gravity = Gravity.CENTER
 
         var hzLinearLayout = LinearLayout(activity)
@@ -181,7 +181,7 @@ class CategoryFragment : Fragment(), SectionsPagerAdapter.EventListener {
         params.gravity = Gravity.CENTER
 
         val paramsBtn = LinearLayout.LayoutParams(0, ViewGroup.LayoutParams.WRAP_CONTENT, 1.0F)
-        paramsBtn.setMargins(10, 0, 10, 0)
+        paramsBtn.setMargins(10, 5, 10, 5)
         paramsBtn.gravity = Gravity.START
 
         var hzLinearLayout = LinearLayout(activity)

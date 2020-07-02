@@ -19,9 +19,10 @@ import com.example.pricequote.ui.invoice.InvoiceActivity
 import com.example.pricequote.ui.invoice.InvoiceViewModel
 import com.example.pricequote.ui.invoice.SectionsPagerAdapter
 import com.example.pricequote.utilities.UIHelper
+import kotlinx.android.synthetic.main.activity_invoice.*
 import kotlinx.android.synthetic.main.fragment_space.*
 
-class SpaceFragment : Fragment(), SectionsPagerAdapter.EventListener {
+class SpaceFragment : Fragment(), SectionsPagerAdapter.EventListener, UpdateableFragmentListener {
 
     private lateinit var binding: FragmentSpaceBinding
     private lateinit var viewModel: InvoiceViewModel
@@ -99,17 +100,21 @@ class SpaceFragment : Fragment(), SectionsPagerAdapter.EventListener {
         btnUnfocused: Button,
         btnFocus: Button
     ) {
-        //Log.i(TAG, "setFocus, currentSpaceIdx: $currentSpaceIdx")
-        //Log.i(TAG, "btnUnfocused: $btnUnfocused")
-        //Log.i(TAG, "btnFocus: $btnFocus")
+        Log.i(TAG, "setFocus, currentSpaceIdx: $currentSpaceIdx")
+        Log.i(TAG, "btnUnfocused: ${btnUnfocused.text}")
+        Log.i(TAG, "btnFocus: ${btnFocus.text}")
         this.spaceBtnUnfocused = btnFocus
         saveLocalFragmentUpdates()
 
         btnUnfocused.setTextColor(resources.getColor(R.color.colorPrimary, activity?.theme))
         btnUnfocused.setBackgroundResource(R.drawable.btn_space_released)
 
+        Log.i(TAG, "PREbtnFocus-Color: ${btnFocus.currentTextColor}")
         btnFocus.setTextColor(resources.getColor(R.color.white, activity?.theme))
         btnFocus.setBackgroundResource(R.drawable.btn_space_pressed)
+
+        Log.i(TAG, "btnFocus-Color: ${btnFocus.currentTextColor}")
+        btnFocus.postInvalidate()
 
         (activity as InvoiceActivity).updatePrice()
     }
@@ -123,7 +128,13 @@ class SpaceFragment : Fragment(), SectionsPagerAdapter.EventListener {
         Log.i(TAG,"saveLocalFragmentUpdates: SpaceFragment -> ${jsonConfig[currentSpaceIdx].spaceName}")
         currentInvoice.spaceName = jsonConfig[currentSpaceIdx].spaceName
 
-        if(currentInvoice.categoryName?.isEmpty()!!) updateCatSizeOnClick()
+        if(currentInvoice.categoryName?.isEmpty()!!){
+            updateCatSizeOnClick()
+        }
+        (activity as InvoiceActivity).view_pager.adapter?.notifyDataSetChanged()
+    }
+
+    override fun updateUI() {
     }
 
     companion object {
